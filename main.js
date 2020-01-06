@@ -13,6 +13,7 @@ const bird_configs = {
 
 let birds = [];
 let player_bird;
+let best_score = 0;
 
 let game = new Game();
 
@@ -70,15 +71,26 @@ function draw(){
     fill(0);
     text(`Score: ${game.score_show}`, WIDTH - 130, HEIGHT - 50); 
 
+    //Best Score
+    textSize(40);
+    fill(255);
+    text(`Best score so far: ${best_score}`, WIDTH - 200, HEIGHT + 50);
+
     if(!pause){
         let is_done = game.updateFrame(birdFlappingUpImg, birdMidFlapImg, birdFlappingDownImg, pipeHeadImg, shaftImg);
         if(is_done){
             pause = !pause;
+            if(game.score_show > best_score){
+                best_score = game.score_show;
+            }
             game.resetGame();
             birds = [];
             player_bird = new Bird(bird_configs.gravity, bird_configs.lift, bird_configs.air_res);
             birds.push(player_bird);
             game.setUpBirds(birds);
+            setTimeout(function(){
+                pause = !pause;
+            }, 1000);
         }
     }
     if(label){

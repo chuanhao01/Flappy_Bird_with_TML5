@@ -37,8 +37,8 @@ function TML5(){
 
         // Drawing label
         fill(255);
-        textSize(16);
+        textSize(50);
         textAlign(CENTER);
-        text(label, this.starting_pos.x + (this.video_config.x / 2), this.starting_pos.y + (this.video_config.y - 10));
+        text(label, this.starting_pos.x + (this.video_config.x / 2), this.starting_pos.y + (this.video_config.y + 50));
     };
 }
