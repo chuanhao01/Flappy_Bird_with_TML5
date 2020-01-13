@@ -17,3 +17,6 @@ Also remember to refresh the page if it lags.
 ### How the game works.
 
 Make your hands into a triangle shape for the bird to jump and move your hands away if you do not want the bird to jump.
+
+## How the TML5 code works
+Refer to my other repo [here]('https://github.com/chuanhao01/TML5_JS').
