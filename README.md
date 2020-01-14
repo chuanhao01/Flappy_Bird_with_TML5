@@ -4,7 +4,7 @@ Hi, this is another repo milking the flappy bird game I fixed together with duct
 
 For this project, I made use of the new teachable machines released by google and the ml5.js library. You can find resources for these things below:  
 
-Google teachable machines: [Link](https://teachablemachine.withgoogle.com/)
+Google teachable machines: [Link](https://teachablemachine.withgoogle.com/)  
 ml5.js: [Link](https://ml5js.org/)
 
 ## Example of how it works  
